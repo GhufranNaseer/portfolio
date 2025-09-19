@@ -1,15 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Redirecting...</title>
-    <script type="text/javascript">
-      // Redirect all 404 requests to index.html
-      var redirectTo = window.location.protocol + "//" + window.location.host + "/portfolio/";
-      window.location.replace(redirectTo);
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+    
+    <!-- Performance optimizations -->
+    <link rel="dns-prefetch" href="//images.unsplash.com">
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+    
+    <!-- SEO Meta Tags -->
+    <title>Muhammad Ghufran - Full Stack Developer & AI Integration Specialist | React Node.js Expert</title>
+    <meta name="description" content="Professional full stack developer specializing in React, Node.js, and AI integrations. Expert in modern web applications, CRM systems, WordPress development, and AI chatbots. Available for freelance projects and collaborations. 5+ years experience building scalable web solutions." />
+    <meta name="keywords" content="full stack developer, React developer, Node.js expert, AI integration, web development, CRM systems, WordPress development, chatbot development, freelance developer, web applications, JavaScript developer, TypeScript, MongoDB, PostgreSQL, Express.js, Next.js, responsive design, API development, database design, UI/UX development" />
+    <meta name="author" content="Muhammad Ghufran" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <link rel="canonical" id="canonical-url" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Muhammad Ghufran - Full Stack Developer & AI Integration Specialist" />
+    <meta property="og:description" content="Professional full stack developer specializing in React, Node.js, and AI integrations. Expert in modern web applications, CRM systems, and AI chatbots." />
+    <meta property="og:site_name" content="Muhammad Ghufran Portfolio" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="/api/placeholder/1200/630?text=Muhammad%20Ghufran%20-%20Full%20Stack%20Developer" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Muhammad Ghufran - Full Stack Developer Portfolio" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Muhammad Ghufran - Full Stack Developer & AI Integration Specialist" />
+    <meta name="twitter:description" content="Professional full stack developer specializing in React, Node.js, and AI integrations. Expert in modern web applications and AI chatbots." />
+    <meta name="twitter:image" content="/api/placeholder/1200/630?text=Muhammad%20Ghufran%20-%20Full%20Stack%20Developer" />
+    <meta name="twitter:image:alt" content="Muhammad Ghufran - Full Stack Developer Portfolio" />
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#3b82f6" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Muhammad Ghufran" />
+    <meta name="application-name" content="Muhammad Ghufran Portfolio" />
+    <meta name="msapplication-TileColor" content="#3b82f6" />
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Muhammad Ghufran",
+      "jobTitle": "Full Stack Developer",
+      "description": "Professional full stack developer specializing in React, Node.js, and AI integrations",
+      "sameAs": [
+        "https://github.com/muhammad-ghufran",
+        "https://linkedin.com/in/muhammad-ghufran"
+      ],
+      "knowsAbout": [
+        "React",
+        "Node.js",
+        "TypeScript",
+        "Full Stack Development",
+        "AI Integration",
+        "CRM Systems",
+        "WordPress Development",
+        "Chatbot Development"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance Developer"
+      }
+    }
     </script>
+    
+    <!-- Professional Services Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Muhammad Ghufran - Web Development Services",
+      "description": "Professional web development services including full stack development, AI integration, and modern web applications",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US"
+      },
+      "serviceType": [
+        "Full Stack Web Development",
+        "AI Integration",
+        "CRM Development",
+        "WordPress Development",
+        "Chatbot Development",
+        "React Development",
+        "Node.js Development"
+      ],
+      "provider": {
+        "@type": "Person",
+        "name": "Muhammad Ghufran"
+      },
+      "areaServed": "Worldwide",
+      "availableLanguage": "English"
+    }
+    </script>
+    
+    <!-- Self-hosted optimized fonts -->
+    <style>
+      /* Modern system font stack with Inter fallback */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300 700;
+        font-display: swap;
+        src: local('Inter'), local('Inter-Regular');
+      }
+      
+      :root {
+        --font-inter: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      }
+      
+      /* Critical CSS inline */
+      body {
+        font-family: var(--font-inter);
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    </style>
+    <script type="module" crossorigin src="/portfolio/assets/index-BAe6cuP5.js"></script>
+    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-DqdWIISB.css">
   </head>
   <body>
-    Redirecting...
+    <div id="root"></div>
+    <script>
+      // Set canonical URL dynamically
+      document.getElementById('canonical-url').href = window.location.origin + window.location.pathname;
+      // Set og:url dynamically
+      const ogUrlMeta = document.createElement('meta');
+      ogUrlMeta.setAttribute('property', 'og:url');
+      ogUrlMeta.content = window.location.origin + window.location.pathname;
+      document.head.appendChild(ogUrlMeta);
+    </script>
   </body>
 </html>
